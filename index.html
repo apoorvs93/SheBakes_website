@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>She Bakes</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- Header -->
+   <header class="navbar">
+
+    <div class="logo">
+        <h1>She Bakes</h1>
+        <p>Freshly Baked With Love</p>
+    </div>
+
+    <nav>
+
+    <a href="#home">Home</a>
+
+    <a href="#menu">Menu</a>
+
+    <a href="#about">About</a>
+
+    <a href="#contact">Contact</a>
+
+    <button onclick="orderOnWhatsApp()">
+        Order Now
+    </button>
+
+</nav>
+
+</header>
+
+    <!-- Main Content -->
+    <main>
+
+
+        <!-- Welcome Section -->
+      <!-- Hero Section -->
+<section class="hero" id="home">
+
+    <div class="hero-text">
+
+        <p class="small-title">
+            FRESHLY BAKED WITH LOVE
+        </p>
+
+        <h2>
+            Sweet Moments<br>
+            Start With She Bakes
+        </h2>
+
+        <p class="hero-description">
+            Delicious homemade cakes, cookies and tea cakes,
+            freshly baked for your special moments.
+        </p>
+
+        <a href="#menu" class="hero-button">Explore Our Menu</a>
+
+    </div>
+
+
+    <div class="hero-image">
+
+        <img src="images/cake1.png"
+        alt="She Bakes Chocolate Cake">
+
+    </div>
+
+</section>
+
+
+        <!-- Specialities Section -->
+       <!-- Specialities Section -->
+<section class="specialities">
+
+    <p class="small-title">
+        WHAT WE BAKE
+    </p>
+
+    <h2>
+        Our Specialities
+    </h2>
+
+    <p class="section-description">
+        Freshly baked treats made with quality ingredients
+        and lots of love.
+    </p>
+
+
+    <div class="category-container">
+
+
+        <!-- Cakes -->
+        <div class="category-card">
+
+            <div class="category-icon">
+                🎂
+            </div>
+
+            <h3>Cakes</h3>
+
+            <p>
+                Beautiful and delicious cakes
+                for birthdays and celebrations.
+            </p>
+
+           <a href="#menu">Explore Cakes →</a>
+
+        </div>
+
+
+        <!-- Cookies -->
+        <div class="category-card">
+
+            <div class="category-icon">
+                🍪
+            </div>
+
+            <h3>Cookies</h3>
+
+            <p>
+                Freshly baked crunchy cookies
+                perfect for every occasion.
+            </p>
+
+            <a href="#menu">Explore Cookies →</a>
+
+        </div>
+
+
+        <!-- Tea Cakes -->
+        <div class="category-card">
+
+            <div class="category-icon">
+                🍰
+            </div>
+
+            <h3>Tea Cakes</h3>
+
+            <p>
+                Soft and delicious tea cakes
+                made for your everyday cravings.
+            </p>
+
+            <a href="#menu">Explore Tea Cakes →</a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- Menu Section -->
+<section class="menu-section" id="menu">
+<div class="menu-watermark"></div>
+
+    <p class="small-title">OUR MENU</p>
+
+    <h2>Freshly Baked With Love</h2>
+
+    <p class="menu-subtitle">
+        Delicious cakes, tea cakes and cookies made specially for your sweet moments.
+    </p>
+
+
+    <!-- CAKES -->
+
+    <div class="menu-category">
+
+        <div class="category-heading">
+            <h3>Cakes</h3>
+            <span>Celebrate Every Moment</span>
+        </div>
+
+
+        <div class="menu-items">
+
+            <!-- Chocolate Truffle Cake -->
+            <div class="menu-item">
+                <div>
+                    <h4>Chocolate Truffle Cake</h4>
+                    <p>
+                        Layers of moist dark chocolate sponge filled
+                        with velvety smooth chocolate ganache.
+                    </p>
+                </div>
+
+                    <div class="menu-price">
+                        <span>0.5 kg<br><strong>₹715</strong></span>
+                        <span>1 kg<br><strong>₹1145</strong></span>
+                    </div>
+
+                    <div class="order-buttons">
+
+                        <button onclick="orderProductSize('Chocolate Truffle Cake', '0.5 kg', '₹715')">
+                            Order 0.5 kg
+                        </button>
+
+                        <button onclick="orderProductSize('Chocolate Truffle Cake', '1 kg', '₹1145')">
+                            Order 1 kg
+                        </button>
+
+                    </div>
+            </div>
+
+
+            <!-- Milk Chocolate Cake -->
+            <div class="menu-item">
+                <div>
+                    <h4>Milk Chocolate Cake</h4>
+                    <p>
+                        Ultra-moist vanilla sponge layers filled with
+                        silky, velvety milk chocolate ganache.
+                    </p>
+                </div>
+
+                    <div class="menu-price">
+                         <span>0.5 kg<br><strong>₹655</strong></span>
+                         <span>1 kg<br><strong>₹1145</strong></span>
+                    </div>
+
+                    <div class="order-buttons">
+                            <button onclick="orderProductSize('Milk Chocolate Cake', '0.5 kg', '₹655')">
+                                Order 0.5 kg
+                            </button>
+
+                            <button onclick="orderProductSize('Milk Chocolate Cake', '1 kg', '₹1145')">
+                                Order 1 kg
+                            </button>
+                     </div>
+            </div>
+
+
+            <!-- Biscoff Dream Cake -->
+            <div class="menu-item">
+                <div>
+                    <h4>Biscoff Dream Cake</h4>
+                    <p>
+                        Light, fluffy vanilla sponge layered with airy
+                        whipped cream and a generous swirl of Lotus Biscoff spread.
+                    </p>
+                </div>
+                <div class="menu-price">
+                    <span>0.5 kg<br><strong>₹590</strong></span>
+                    <span>1 kg<br><strong>₹1000</strong></span>
+                </div>
+
+                <div class="order-buttons">
+                    <button onclick="orderProductSize('Biscoff Dream Cake', '0.5 kg', '₹590')">
+                        Order 0.5 kg
+                    </button>
+
+                    <button onclick="orderProductSize('Biscoff Dream Cake', '1 kg', '₹1000')">
+                        Order 1 kg
+                    </button>
+                </div>
+                
+
+
+            </div>
+
+
+            <!-- Classic Red Velvet Cake -->
+            <div class="menu-item">
+                <div>
+                    <h4>Classic Red Velvet Cake</h4>
+                    <p>
+                        Cocoa-infused red sponge layered with rich cream cheese
+                        and finished with light, cloud-like whipped cream frosting.
+                    </p>
+                </div>
+
+                
+
+                <div class="menu-price">
+                    <span>0.5 kg<br><strong>₹920</strong></span>
+                    <span>1 kg<br><strong>₹1395</strong></span>
+                </div>
+
+                <div class="order-buttons">
+                    <button onclick="orderProductSize('Classic Red Velvet Cake', '0.5 kg', '₹920')">
+                        Order 0.5 kg
+                    </button>
+
+                    <button onclick="orderProductSize('Classic Red Velvet Cake', '1 kg', '₹1395')">
+                        Order 1 kg
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Classic Vanilla Cake -->
+            <div class="menu-item">
+                <div>
+                    <h4>Classic Vanilla Cake</h4>
+                    <p>
+                        Incredibly soft and moist vanilla sponge layered
+                        with light, airy whipped cream that melts with every bite.
+                    </p>
+                </div>
+
+                <div class="menu-price">
+                    <span>0.5 kg<br><strong>₹520</strong></span>
+                    <span>1 kg<br><strong>₹860</strong></span>
+                </div>
+
+                <div class="order-buttons">
+                    <button onclick="orderProductSize('Classic Vanilla Cake', '0.5 kg', '₹520')">
+                        Order 0.5 kg
+                    </button>
+
+                    <button onclick="orderProductSize('Classic Vanilla Cake', '1 kg', '₹860')">
+                        Order 1 kg
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Wild Strawberry Bliss Cake -->
+            <div class="menu-item">
+                <div>
+                    <h4>Wild Strawberry Bliss Cake</h4>
+                    <p>
+                        Light vanilla sponge paired with homemade juicy
+                        strawberry compote and wrapped in silky whipped cream.
+                    </p>
+                </div>
+
+                <div class="menu-price">
+                    <span>0.5 kg<br><strong>₹610</strong></span>
+                    <span>1 kg<br><strong>₹860</strong></span>
+                </div>
+
+                <div class="order-buttons">
+                    <button onclick="orderProductSize('Wild Strawberry Bliss Cake', '0.5 kg', '₹610')">
+                        Order 0.5 kg
+                    </button>
+
+                    <button onclick="orderProductSize('Wild Strawberry Bliss Cake', '1 kg', '₹860')">
+                        Order 1 kg
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Oreo Vanilla Cake -->
+            <div class="menu-item">
+                <div>
+                    <h4>Oreo Vanilla Cake</h4>
+                    <p>
+                        Fluffy vanilla sponge with crushed Oreo bits,
+                        layered with rich chocolate ganache and crunchy Oreo crumbs.
+                    </p>
+                </div>
+
+                <div class="menu-price">
+                    <span>0.5 kg<br><strong>₹715</strong></span>
+                    <span>1 kg<br><strong>₹1145</strong></span>
+                </div>
+
+                <div class="order-buttons">
+                    <button onclick="orderProductSize('Oreo Vanilla Cake', '0.5 kg', '₹715')">
+                        Order 0.5 kg
+                    </button>
+
+                    <button onclick="orderProductSize('Oreo Vanilla Cake', '1 kg', '₹1145')">
+                        Order 1 kg
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- TEA CAKES -->
+
+    <div class="menu-category">
+
+        <div class="category-heading">
+            <h3>Tea Cakes</h3>
+            <span>Pure Comfort</span>
+        </div>
+
+
+        <div class="menu-items">
+
+            <!-- Classic Vanilla Tea Cake -->
+            <div class="menu-item">
+                <div>
+                    <h4>Classic Vanilla Tea Cake</h4>
+                    <p>
+                        A rich, buttery and incredibly moist tea cake
+                        with a dense crumb, infused with premium vanilla.
+                    </p>
+                </div>
+
+                <div class="menu-price">
+                    <span>250 gm<br><strong>₹290</strong></span>
+                </div>
+
+                <div class="order-buttons">
+                    <button onclick="orderProductSize('Classic Vanilla Tea Cake', '250 gm', '₹290')">
+                        Order 250 gm
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Marble Tea Cake -->
+            <div class="menu-item">
+                <div>
+                    <h4>Marble Tea Cake</h4>
+                    <p>
+                        A comforting blend of premium vanilla and deep cocoa,
+                        perfect with your morning coffee or afternoon tea.
+                    </p>
+                </div>
+
+                <div class="menu-price">
+                    <span>250 gm<br><strong>₹315</strong></span>
+                </div>
+
+                <div class="order-buttons">
+                    <button onclick="orderProductSize('Marble Tea Cake', '250 gm', '₹315')">
+                        Order 250 gm
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- COOKIES -->
+
+    <div class="menu-category">
+
+        <div class="category-heading">
+            <h3>Cookies</h3>
+            <span>Simple, Timeless</span>
+        </div>
+
+
+        <div class="menu-items">
+
+            <!-- NY Chocolate Cookies -->
+            <div class="menu-item">
+                <div>
+                    <h4>NY Chocolate Cookies</h4>
+                    <p>
+                        Crisp edges, soft centre and loaded with rich
+                        chocolate chips. A classic favourite.
+                    </p>
+                </div>
+
+                <div class="menu-price">
+                    <span>250 gm<br><strong>₹310</strong></span>
+                </div>
+
+                <div class="order-buttons">
+                    <button onclick="orderProductSize('NY Chocolate Cookies', '250 gm', '₹310')">
+                        Order 250 gm
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Oats & Almonds Cookies -->
+            <div class="menu-item">
+                <div>
+                    <h4>Oats &amp; Almonds Cookies</h4>
+                    <p>
+                        A rustic golden-baked cookie with wholesome rolled oats
+                        and crushed almonds, finished with a silky milk chocolate drizzle.
+                    </p>
+                </div>
+
+                <div class="menu-price">
+                    <span>250 gm<br><strong>₹295</strong></span>
+                </div>
+
+                <div class="order-buttons">
+                    <button onclick="orderProductSize('Oats and Almonds Cookies', '250 gm', '₹295')">
+                        Order 250 gm
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- About Section -->
+<section class="about-section" id="about">
+
+    <div class="about-image">
+
+        <img
+            <img
+        src="images/cake2.png"
+        alt="She Bakes Cake">
+
+    </div>
+
+
+    <div class="about-text">
+
+        <p class="small-title">
+            ABOUT SHE BAKES
+        </p>
+
+        <h2>
+            Baked With Love,
+            Made For Your Moments
+        </h2>
+
+        <p>
+            At She Bakes, we believe that every celebration
+            deserves something special.
+        </p>
+
+        <p>
+            From delicious cakes and crunchy cookies to
+            freshly baked tea cakes, every treat is prepared
+            with care and attention to detail.
+        </p>
+
+        <p>
+            Whether it's a birthday, anniversary, celebration,
+            or simply a craving for something sweet —
+            we're here to make your moments a little sweeter.
+        </p>
+
+        <button>
+            Know More
+        </button>
+
+    </div>
+
+</section>
+<!-- Why Choose Us -->
+<section class="why-section">
+
+    <p class="small-title">
+        WHY SHE BAKES
+    </p>
+
+    <h2>
+        Made With Care, Served With Love
+    </h2>
+
+    <p class="section-description">
+        Because every sweet moment deserves something special.
+    </p>
+
+
+    <div class="why-container">
+
+
+        <!-- Point 1 -->
+        <div class="why-card">
+
+            <div class="why-icon">
+                🧁
+            </div>
+
+            <h3>Freshly Baked</h3>
+
+            <p>
+                Our treats are freshly prepared
+                for every order.
+            </p>
+
+        </div>
+
+
+        <!-- Point 2 -->
+        <div class="why-card">
+
+            <div class="why-icon">
+                ❤️
+            </div>
+
+            <h3>Made With Love</h3>
+
+            <p>
+                Every creation is prepared with
+                care and attention to detail.
+            </p>
+
+        </div>
+
+
+        <!-- Point 3 -->
+        <div class="why-card">
+
+            <div class="why-icon">
+                ✨
+            </div>
+
+            <h3>Made For You</h3>
+
+            <p>
+                Customized treats for your
+                special celebrations.
+            </p>
+
+        </div>
+
+
+        <!-- Point 4 -->
+        <div class="why-card">
+
+            <div class="why-icon">
+                🎁
+            </div>
+
+            <h3>Perfect For Celebrations</h3>
+
+            <p>
+                Birthdays, anniversaries and
+                all your special moments.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- Customer Reviews -->
+<section class="reviews-section">
+
+    <p class="small-title">
+        CUSTOMER LOVE
+    </p>
+
+    <h2>
+        What Our Customers Say
+    </h2>
+
+    <p class="section-description">
+        Sweet words from people who have enjoyed She Bakes.
+    </p>
+
+
+    <div class="reviews-container">
+
+
+        <!-- Review 1 -->
+        <div class="review-card">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "The cake was absolutely delicious and
+                looked beautiful. Everyone loved it!"
+            </p>
+
+            <h3>
+                — Happy Customer
+            </h3>
+
+        </div>
+
+
+        <!-- Review 2 -->
+        <div class="review-card">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "Fresh, tasty and beautifully prepared.
+                Would definitely order again."
+            </p>
+
+            <h3>
+                — Happy Customer
+            </h3>
+
+        </div>
+
+
+        <!-- Review 3 -->
+        <div class="review-card">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "The cookies were fresh and delicious.
+                Perfect with evening tea!"
+            </p>
+
+            <h3>
+                — Happy Customer
+            </h3>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section" id="contact">
+
+    <div class="contact-text">
+
+        <p class="small-title">
+            LET'S MAKE IT SWEET
+        </p>
+
+        <h2>
+            Ready To Order?
+        </h2>
+
+        <p>
+            Planning a birthday, celebration or simply
+            craving something delicious?
+        </p>
+
+        <p>
+            Get in touch with us and let's create
+            something special for you.
+        </p>
+
+        <button onclick="orderOnWhatsApp()">
+            Order on WhatsApp
+        </button>
+
+    </div>
+
+
+    <div class="contact-info">
+
+        <div class="contact-item">
+
+            <span>📱</span>
+
+            <div>
+                <h3>WhatsApp</h3>
+                <p>+91 78691 13670</p>
+            </div>
+
+        </div>
+
+
+        <div class="contact-item">
+
+            <span>📍</span>
+
+            <div>
+                <h3>Location</h3>
+                <p>Sector 84, Gurugram</p>
+            </div>
+
+        </div>
+
+
+        <div class="contact-item">
+
+            <span>⏰</span>
+
+            <div>
+                <h3>Order Timing</h3>
+                <p>Contact us for availability</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 She Bakes</p>
+
+    </footer>
+
+
+    <!-- Connect JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
